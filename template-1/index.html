@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/modal.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/app.css">
+  <title>ДК Шарыпово</title>
+</head>
+
+<body>
+  <header class="hero container-fluid border-bottom">
+    <nav class="hero-nav container px-4 px-lg-0 mx-auto">
+      <ul class="nav w-100 list-unstyled align-items-center p-0">
+        <li id="hero-menu" class="flex-grow-1 hero__nav-list hero__nav-list--mobile-menu ft-menu">
+          <ul class="hero__menu-content nav flex-column flex-lg-row ft-menu__slider animated list-unstyled p-2 p-lg-0">
+            <li class="flex-grow-1">
+              <ul id="navi" class="nav nav--lg-side list-unstyled align-items-center p-0">
+                <li class="hero-nav__item">
+                  <a href="/auth" class="hero-nav__link">Авторизация</a>
+                </li>
+                <li class="hero-nav__item">
+                  <a href="/reg" class="hero-nav__link">Регистрация</a>
+                </li>
+                <li class="hero-nav__item">
+                  <a href="/" class="hero-nav__link">Главная страница</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button onclick="document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')"
+            class="ft-menu__close-btn animated">
+            <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"
+                clip-rule="evenodd" />
+              <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+        </li>
+        <li class="d-lg-none flex-grow-1 d-flex flex-row-reverse hero-nav__item">
+          <button onclick="document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')"
+            class="text-center px-2">
+            <i class="fas fa-bars"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div class="hero__content container mx-auto">
+      <div class="row px-0 mx-0 align-items-center">
+        <div class="col-lg-6 px-0">
+          <h1 class="hero__title mb-3">
+            ЦЕНТР КУЛЬТУРНОГО РАЗВИТИЯ <br><span class="highlight">г. Шарыпово</span>
+          </h1>
+          <p class="hero__paragraph mb-5">
+            МУНИЦИПАЛЬНОЕ АВТОНОМНОЕ УЧРЕЖДЕНИЕ
+          </p>
+          <div class="hero__btns-container">
+            <a class="hero__btn btn btn-primary mb-2 mb-lg-0" href="#" onclick="scrollToElement()">
+              Перейти к мероприятиям
+            </a>
+            <a class="hero__btn btn btn-secondary mx-lg-3" onclick="scrollToAbout()" href="#">
+              О ДК
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 mt-5 mt-lg-0 mx-0">
+          <div class="hero__img-container">
+            <img src="assets/imgs/img-1.jpg" class="hero__img w-100">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =================================== -->
+  
+  <div id="pricing" class="block-17 px-4 space-between-blocks">
+    <div class="container" id="container-event">
+      <div class="block-17__header col-lg-8 col-xl-7 mx-auto text-center px-0">
+        <h1 class="block__title mb-3">События</h1>
+        <p class="block__paragraph">
+          Все события в ближайшее время
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================== -->
+
+  <div id="faq" class="block-39 space-between-blocks">
+    <div class="container">
+      <!-- HEADER -->
+      <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
+        <h1 id="about" class="block__title">ИНФОРМАЦИЯ:</h1>
+      </div>
+      <div class="row px-2">
+        <div class="col-lg-6">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              О нас
+            </h4>
+            <p class="content-block__paragraph">
+              Культурное пространство города. Концерты, кинопоказы, деятельность творческих коллективов, общественных организаций.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              Пушкинская карта:
+            </h4>
+            <p class="content-block__paragraph">
+              Важная информация для участников «Пушкинской карты»
+              При посещении мероприятий для подтверждения личности гражданин предъявляет документ, 
+              удостоверяющий личность гражданина Российской Федерации, или необходимые сведения из документа, 
+              удостоверяющего личность гражданина Российской Федерации,
+              и фотографическое изображение лица гражданина посредством мобильного приложения
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              Адрес
+            </h4>
+            <p class="content-block__paragraph">
+              Центр культурного развития
+              <ul>
+                <li>просп. Энергетиков, 5, Шарыпово</li>
+                <li>+7 (39153) 61-5-15</li>
+                <li>ckr@57.krskcit.ru</li>
+                <li>ПН-ЧТ 09:00-17:00</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              ПОДДЕРЖКА УЧАСТНИКОВ СВО
+            </h4>
+            <p class="content-block__paragraph">
+              В соответствии с Указом губернатора Красноярского края от 25.10.2022 № 317-уг, 
+              Постановлением Правительства Красноярского края от 08.11.2022 № 954-п , 
+              Постановлением Правительства Красноярского края от 06.12.2022 №1065-п, 
+              Приказом Министерства культуры Красноярского края от 16.11.2022 № 493-пр опубликован 
+              Порядок бесплатного посещения семьями лиц, принимающих участие в специальной военной операции, 
+              краевых государственных учреждений культуры Красноярского края.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="popup" id="popup">
+    <div class="popup__content">
+      <div id="contact-us" class="block-28 space-between-blocks border-top border-bottom">
+        <div class="container">
+          <div class="row h-100">
+            <h1>Для покупки билетов необходимо авторизоваться</h1>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="button">Закрыть окно </a>
+    </div>
+  </div>
+
+  <!-- =================================== -->
+
+  <div class="block-44 py-5">
+    <div class="container">
+      <div class="row flex-column flex-md-row px-2 justify-content-center">
+        <div class="flex-grow-1">
+        </div>
+        <p class="block-41__copyrights">&copy; 2024 ДК Шарыпово.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================== -->
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+    <script src="assets/app.js" defer></script>
+</body>
+
+</html>

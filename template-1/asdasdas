@@ -1,0 +1,25 @@
+<div class="popup" id="popup">
+    <div class="popup__content">
+      <div id="contact-us" class="block-28 space-between-blocks border-top border-bottom">
+        <div class="container">
+          <div class="row h-100">
+            <h1>Купить билеты</h1>
+            <div class="col-lg-6 h-100 block-28__form-side">
+              <form class="contact-form text-center" id="reg-form">
+                <div class="contact-form__header mb-5">
+                  <h3>Стоимость билета: ${data.cost}</h3>
+                </div>
+                <input id="username" type="email" class="contact-form__input" placeholder="Введите почту для получения билета" required>
+                <input id="card-number" type="text" class="contact-form__input" placeholder="Номер карты" pattern="\d{16}" required>
+                <input id="expiry-date" type="date" class="contact-form__input" placeholder="Срок действия карты" required>
+                <input id="cvv" type="text" class="contact-form__input" placeholder="CVV код" pattern="\d{3}" required>
+                <input id="full-name" type="text" class="contact-form__input" placeholder="ФИО" pattern="[A-Za-z\s]+" required>
+                <button type="submit" style="width: 300px;" class="d-block btn btn-primary px-5 mx-auto">Отменить покупку</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="button">Закрыть окно</a>
+    </div>
+  </div>
