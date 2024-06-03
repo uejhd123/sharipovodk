@@ -29,16 +29,15 @@ class Event(models.Model):
         if self.total_tickets >= quantity:
             self.total_tickets -= quantity
             self.save()
-            return True  # Успешное вычитание
+            return True 
         else:
-            return False  # Недостаточно билетов    
+            return False   
 
     def __str__(self):
         return self.name
 
     @property
     def available_tickets(self):
-        # Количество доступных билетов
         return self.total_tickets - self.ticket_set.count()
 
 class Ticket(models.Model):
