@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import CustomUser, EventType, Event, Ticket
+from .models import CustomUser, EventType, Event, Ticket, NewsArticle
 
 class CustomUserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -42,3 +42,8 @@ class TicketSerializer(serializers.ModelSerializer):
         extra_kwargs = {
             'event': {'write_only': True},
         }
+
+class NewsArticleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = NewsArticle
+        fields = ['id', 'title', 'content', 'publication_date']

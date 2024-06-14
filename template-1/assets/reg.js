@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             alert('Регистрация прошла успешно!');
             window.location.href = 'http://localhost:7000/';
-            // Вы можете перенаправить пользователя на другую страницу после успешной регистрации
         })
         .catch(error => {
             alert('Произошла ошибка при регистрации');

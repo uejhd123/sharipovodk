@@ -50,33 +50,10 @@ function fetchEvents() {
 }
 fetchEvents();
 
-//Валидаторы
-document.getElementById('cvv').addEventListener('input', function() {
-  var inputValue = this.value;
-  var cleanedValue = inputValue.replace(/\D/g, '');
-  var finalValue = cleanedValue.slice(0, 3);
-  this.value = finalValue;
-});
-
 document.getElementById('full-name').addEventListener('input', function() {
   var inputValue = this.value;
   var cleanedValue = inputValue.replace(/[^a-zA-Zа-яА-Я\s]/g, '');
   this.value = cleanedValue;
-});
-
-document.getElementById('card-number').addEventListener('input', function() {
-  var inputValue = this.value;
-  var cleanedValue = inputValue.replace(/\D/g, '');
-  var finalValue = cleanedValue.slice(0, 16);
-  this.value = finalValue;
-});
-
-document.getElementById('expiry-date').addEventListener('change', function() {
-  var selectedDate = new Date(this.value);
-  var currentDate = new Date();
-  if (selectedDate < currentDate) {
-    this.valueAsDate = currentDate;
-  }
 });
 document.getElementById('username').addEventListener('input', function() {
   var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;

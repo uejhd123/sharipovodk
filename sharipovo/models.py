@@ -47,3 +47,13 @@ class Ticket(models.Model):
 
     def __str__(self):
         return f"{self.quantity} tickets for {self.event.name} by User ID: {self.user_id}"
+
+
+class NewsArticle(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+    publication_date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title

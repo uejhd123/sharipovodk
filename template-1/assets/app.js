@@ -4,7 +4,23 @@ function scrollToElement() {
 }
 
 function scrollToAbout() {
-  var element = document.getElementById('about');
+  var element = document.getElementById('faq');
+  element.scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollToadmin() {
+  var element = document.getElementById('admins');
+  element.scrollIntoView({ behavior: 'smooth' });
+}
+
+
+function scrollToRasp() {
+  var element = document.getElementById('raspisanie');
+  element.scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollToIT() {
+  var element = document.getElementById('IT');
   element.scrollIntoView({ behavior: 'smooth' });
 }
 
